@@ -1,0 +1,21 @@
+struct wallet;
+struct bitcoinsList;
+struct hashNode;
+
+int duplicateNames(struct wallet* , char*, int);
+int duplicateBitcoins(struct bitcoinsList* , int, int);
+int getTransactionMax(int* , int);
+int uniqueTransactions(int* ,int , int);
+int dateValidation(char* );
+int dateComparison(char* , char*, char*);
+int checkIfIsDate(char* );
+int timeValidation(char* );
+int timeComparison(char* , char*, char*);
+int checkIfIsTime(char* );
+int checkLastTime(char* , char*);
+int checkLastDate(char *, char*);
+void findAll(struct hashNode*, int, char*, int);
+void findAllHistory(struct hashNode*, int, char*, int);
+void findSpecificHistory(struct hashNode*, int, char*, char*, char*, char*, char*, int);
+void findSpecific(struct hashNode*, int, char*, char*, char*, char*, char*, int);
+char lastChar(char* );
